@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Traffic Analysis</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+        
+
+        /* body styles */
+        body {
+        background-color: #faf8f4;
+            margin: 00;
+            padding: 00;
+            box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+        }
+
+        /* body heading  */
+        h1{
+        font-size: 50px;
+        /* padding-left: 80px; */
+        text-align: center;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 15px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        body {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Network Traffic Analysis</h1>
+    <table>
+        <tr>
+            <th>Src IP</th>
+            <th>Dst IP</th>
+            <th>Protocol</th>
+            <th>Version</th>
+            <th>Size</th>
+            <th>TTL</th>
+            <th>Identification</th>
+            <th>Flags</th>
+            <th>Fragment Offset</th>
+            <th>Checksum</th>
+            <th>Options</th>
+        </tr>
+        {% for packet in packet_data %}
+        <tr>
+            <td>{{ packet.src_ip }}</td>
+            <td>{{ packet.dst_ip }}</td>
+            <td>{{ packet.protocol }}</td>
+            <td>{{ packet.version }}</td>
+            <td>{{ packet.size }}</td>
+            <td>{{ packet.ttl }}</td>
+            <td>{{ packet.identification }}</td>
+            <td>{{ packet.flags }}</td>
+            <td>{{ packet.frag_offset }}</td>
+            <td>{{ packet.checksum }}</td>
+            <td>{{ packet.options }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+ 
+
+/* body styles */
+body {
+  background-color: #faf8f4;
+    margin: 00;
+    padding: 00;
+    box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* body heading */
+header {
+    background-color: #f8f2e7;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.header-text{
+  font-family: "Poppins", sans-serif;
+  font-size: 4.5rem;
+  font-weight:600;
+  text-transform: uppercase;
+  color: #140a6c;
+  letter-spacing: 8px;
+}
+
+/* heading of paragraph  */
+.heading-para{
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 40px;
+}
+
+.heading-para h1{
+  color: #101075;
+  text-align: center;
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 3.5rem;
+  text-transform:uppercase;
+  letter-spacing:8px;
+  text-shadow:10px 10px 10px rgba(255, 251, 251, 0.3);
+}
+
+/* body of paragraph  */
+.body-para p, ul{
+  color: #00224D;
+  text-align: justify;
+  font-size: 20px;
+}
+
+/* file upload container  */
+.container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  width: 600px;
+  height: 300px;
+  background-color: #ffffff;
+  padding: 10px 30px 40px;
+}
+
+.card h3 {
+  font-size: 22px;
+  font-weight: 600;
+  
+}
+
+.card svg{
+  height: 80px;
+}
+
+.drop_box {
+  margin: 10px 0;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 3px dotted #a3a3a3;
+  border-radius: 5px;
+}
+
+.drop_box h4 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #2e2e2e;
+}
+
+.drop_box p {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  color: #a3a3a3;
+}
+
+.btn {
+  text-decoration: none;
+  background-color: #005af0;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  transition: 0.3s;
+}
+
+.btn:hover{
+  text-decoration: none;
+  background-color: #ffffff;
+  color: #005af0;
+  padding: 10px 20px;
+  border: none;
+  outline: 1px solid #010101;
+}
+.form input {
+  margin: 10px 0;
+  width: 100%;
+  background-color: #e2e2e2;
+  border: none;
+  outline: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+}
+
+/* end file upload container  */
+
+/* button  */
+.button {
+  display: inline-block;
+  padding: 10px 40px;
+  font-size: 22px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  background-color: #008DDA; /* Blue color */
+  color: #ffffff; /* White text color */
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+}
+
+.button:hover {
+  background-color: #0056b3; /* Darker blue color on hover */
+}
+
+.btn-spacing a{
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+
+/* Navbar styles */
+nav {
+  background-color: #444; /* Change the background color */
+  text-align: center;
+}
+
+nav a {
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: none; /* Remove underline */
+}
+
+nav a:hover {
+  background-color: #555; /* Change background color on hover */
+}

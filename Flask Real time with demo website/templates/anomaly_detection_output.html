@@ -1,0 +1,122 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Traffic Analysis</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 15px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        body {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Network Traffic Analysis</h1>
+    <table>
+        <tr>
+            <th>Src IP</th>
+            <th>Dst IP</th>
+            <th>Protocol</th>
+            <th>Version</th>
+            <th>Size</th>
+            <th>TTL</th>
+            <th>Identification</th>
+            <th>Flags</th>
+            <th>Fragment Offset</th>
+            <th>Checksum</th>
+            <th>Options</th>
+        </tr>
+        
+    </table>
+    <div>
+        <p>{{img_names_list[0]}}</p>
+        <br>
+        <p>{{img_names_list[1]}}</p>
+        <img src="{{ url_for('static', filename= '/images/confusion_matrix.png') }}" alt="from static confusion">
+<br>
+        <img src="{{ url_for('static', filename= 'images/roc_curve.png') }}" alt="from static confusion">
+    </div>
+    
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anomaly Detection</title>
+    <link rel="stylesheet" href="/static/css/output_anomaly_detection.css">
+</head>
+<body>
+    <h1 class="main-heading">Anomaly Detection</h1>
+
+    <div class="container">
+        <div class="text-container text spacing-left">
+            <h3>Confusion Matrix</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                anim id est laborum.</p>
+        </div>
+        <div class="image-container">
+            <!-- <img src="confusion_matrix.png" alt="Image" style="width: 436px; height: 439px;"> -->
+            <img src="{{ url_for('static', filename= '/images/confusion_matrix.png') }}" alt="Image" style="width: 436px; height: 439px;">
+        </div>
+    </div>
+    <div class="container">
+        <div class="image-container">
+            <!-- <img src="roc_curve.png" alt="Image"  style="width: 526px; height: 409px;"> -->
+            <img src="{{ url_for('static', filename= '/images/roc_curve.png') }}" alt="Image"  style="width: 526px; height: 409px;">
+        </div>
+        <div class="text-container text spacing-right">
+            <h3>ROC Curve</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                anim id est laborum.</p>
+                
+        </div>
+        
+    </div>
+
+
+    
+    
+</body>
+</html>
